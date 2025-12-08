@@ -6,7 +6,7 @@ use App\Models\article;
 // フォームの状態を管理
 state(['article', 'title', 'body']);
 
-// ルートモデルバインディングはmountでまとめて行う
+// ルートモデルバインディングはmountでまとめて行う。
 mount(function (article $article) {
     $this->article = $article;
     $this->title = $article->title;
