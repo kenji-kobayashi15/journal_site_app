@@ -12,7 +12,7 @@ Route::get('/', function () {
 Volt::route('/articles', 'articles.index')->name('articles.index');
 
 // 編集ページ
-// Volt::route('/articles/create', 'articles.create')->name('articles.create');
+Volt::route('/articles/create', 'articles.create')->name('articles.create');
 
 // 論文詳細ページ
 Volt::route('/articles/{article}', 'articles.show')->name('articles.show');

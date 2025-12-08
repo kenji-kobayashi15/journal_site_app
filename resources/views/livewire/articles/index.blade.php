@@ -4,6 +4,11 @@ use function Livewire\Volt\{state};
 use App\Models\article;
 //
 state(['articles' => fn() => article::all()]);
+
+$create = function () {
+    return redirect()->route('articles.create');
+};
+
 ?>
 
 <div>

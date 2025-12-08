@@ -19,13 +19,11 @@ $store = function () {
 ?>
 
 <div>
-    {{-- <a href="{{ route('articles.index') }}">戻る</a>
-    <h1></h1>
-
+    <h1>新規論文投稿</h1>
     <!-- wire:submit="store"でフォーム送信時にstore関数を呼び出し -->
     <form wire:submit="store">
         <p>
-            <label for="title">タイトル</label><br>
+            <label for="title">論文タイトル</label><br>
             <!-- wire:model="title"で入力値とコンポーネントの状態($this->title)を自動的に同期 -->
             <input type="text" wire:model="title" id="title">
         </p>
@@ -34,7 +32,7 @@ $store = function () {
             <!-- wire:model="body"で入力値とコンポーネントの状態($this->body)を自動的に同期 -->
             <textarea wire:model="body" id="body"></textarea>
         </p>
-
-        <button type="submit">登録</button>
-    </form> --}}
+        {{-- <a href="{{ route('articles.index') }}">戻る</a> --}}
+        <button type="submit">投稿</button>
+    </form>
 </div>
