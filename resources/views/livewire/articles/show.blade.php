@@ -11,9 +11,7 @@ state(['article' => fn(article $article) => $article]);
     <p>タイトル: {{ $article->title }}</p>
     <p>{!! nl2br(e($article->body)) !!}</p>
     <span>
-        <button>
-        <a href="{{ route('articles.index') }}">一覧へ戻る</a>
-        </button>
+        <button onclick="location.href='http://localhost/articles'">一覧へ戻る</button>
         <button>編集する</button>
         <button>削除する</button>
     </span>
