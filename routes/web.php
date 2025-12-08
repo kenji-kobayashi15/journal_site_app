@@ -16,3 +16,6 @@ Volt::route('/articles/create', 'articles.create')->name('articles.create');
 
 // 論文詳細ページ
 Volt::route('/articles/{article}', 'articles.show')->name('articles.show');
+
+// 投稿論文編集ページ
+Volt::route('/articles/{article}/edit', 'articles.edit')->name('articles.edit');
