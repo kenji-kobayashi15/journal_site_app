@@ -27,9 +27,16 @@ $update = function () {
     <form wire:submit="update">
         <p>
             <label for="title">タイトル</label><br>
-            {{-- wire:model="title"で入力値とコンポーネントの状態($this->title)を自動的に同期 --> --}}
             <input type="text" wire:model="title" id="title">
+            {{-- <select wire:model="title" id="title">             --}}
+            {{-- <option value="テストテキスト">テストテキスト</option>
+            <option value=" "></option>
+            <option value="テストテキスト変更">テストテキスト変更</option> --}}
+            {{-- </select> --}}
         </p>
+
+
+
         <p>
             <label for="body">本文</label><br>
             {{-- wire:model="body"で入力値とコンポーネントの状態($this->body)を自動的に同期 --> --}}
