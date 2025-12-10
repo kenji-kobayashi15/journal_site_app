@@ -28,11 +28,6 @@ $update = function () {
         <p>
             <label for="title">タイトル</label><br>
             <input type="text" wire:model="title" id="title">
-            {{-- <select wire:model="title" id="title">             --}}
-            {{-- <option value="テストテキスト">テストテキスト</option>
-            <option value=" "></option>
-            <option value="テストテキスト変更">テストテキスト変更</option> --}}
-            {{-- </select> --}}
         </p>
 
 

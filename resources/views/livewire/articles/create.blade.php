@@ -12,8 +12,8 @@ $store = function () {
         'title' => $this->title,
         'body' => $this->body,
     ]);
-    // 一覧ページにリダイレクト
-    return redirect()->route('articles.index');
+    // fillableプロパティで代入許可したカラム変更
+    article::create($this->all());
 };
 
 ?>
