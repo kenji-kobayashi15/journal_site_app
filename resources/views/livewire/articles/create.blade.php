@@ -7,15 +7,10 @@ state(['title', 'body']);
 
 // 編集を保存する関数
 $store = function () {
-    // フォームからの入力値をデータベースへ保存
-    article::create([
-        'title' => $this->title,
-        'body' => $this->body,
-    ]);
-    // 一覧ページにリダイレクトを再侵入。(重要箇所消してはいけない)
-    return redirect()->route('articles.index');
     // fillableプロパティで代入許可したカラム変更
     article::create($this->all());
+    // 一覧ページにリダイレクト
+    return redirect()->route('articles.index'); // fillableプロパティで代入許可したカラム変更
 };
 
 ?>
